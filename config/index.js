@@ -10,7 +10,18 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    //关闭跨域
+    proxyTable: {
+      '/StudySpringBoot':{
+        //接口域名【只要修改这里的url就行】
+        target:"http://localhost:8001/StudySpringBoot/",
+        //是否跨域
+        changeOrigin:true,
+        pathRewrite:{
+          '^/StudySpringBoot':''
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

@@ -1,23 +1,25 @@
 <template>
   <div id="app">
     <div>
-      <MyHeader></MyHeader>
-    </div>
-    <div>
-      <HomeBody></HomeBody>
+      <Demo></Demo>
     </div>
   </div>
 </template>
 
 <script>
-  import MyHeader from './components/header/MyHeader'
-  import HomeBody from './components/home/HomeBody'
+  import Demo from './components/demo/Demo'
+
   export default {
     name: 'App',
     components: {
-      // "homeBody":HomeBody
-      HomeBody,
-      MyHeader
+      Demo
+    },
+    data() {
+      return {
+      }
+    },
+    mounted(){
+
     }
   }
 </script>
