@@ -1,39 +1,27 @@
 <template>
-  <div id="app">
-    <div>
-      <Demo></Demo>
+  <div class="app">
+    <Header></Header>
+    <div class="realBody">
+      <router-view/>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-  import Demo from './components/demo/Demo'
+  import Header from "@/components/header/Header"
+  import Footer from "@/components/footer/Footer"
 
   export default {
     name: 'App',
     components: {
-      Demo
-    },
-    data() {
-      return {
-      }
-    },
-    mounted(){
-
+      Header,
+      Footer
     }
   }
 </script>
 
 <style>
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-
   * {
     margin: 0px;
     padding: 0px;
@@ -42,5 +30,10 @@
     font-family: Arial; /*字体*/
     font-size: 16px; /*文字大小*/
     text-align: center; /*文字居中*/
+  }
+  .realBody{
+    height: 800px;
+    width: 1190px;
+    margin: 0 auto;
   }
 </style>
