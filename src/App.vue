@@ -1,9 +1,12 @@
 <template>
   <div class="app">
+    <!--页面导航栏-->
     <Header></Header>
+    <!--主界面-->
     <div class="realBody">
       <router-view/>
     </div>
+    <!--页脚-->
     <Footer></Footer>
   </div>
 </template>
@@ -17,6 +20,9 @@
     components: {
       Header,
       Footer
+    },
+    mounted(){
+
     }
   }
 </script>

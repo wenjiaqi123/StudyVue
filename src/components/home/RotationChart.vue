@@ -29,19 +29,15 @@
         charts: [
           "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2018939532,1617516463&fm=26&gp=0.jpg",
           "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3608155120,1630233151&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg",
-          "http://img4.imgtn.bdimg.com/it/u=2241344963,3314667459&fm=26&gp=0.jpg"
+          "https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1857931629,3664337888&fm=202&mola=new&crop=v1",
+          "https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1857931629,3664337888&fm=202&mola=new&crop=v1",
+          "https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1857931629,3664337888&fm=202&mola=new&crop=v1",
+          "https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1857931629,3664337888&fm=202&mola=new&crop=v1",
+          "https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1857931629,3664337888&fm=202&mola=new&crop=v1",
+          "https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1857931629,3664337888&fm=202&mola=new&crop=v1",
+          "https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1857931629,3664337888&fm=202&mola=new&crop=v1",
+          "https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1857931629,3664337888&fm=202&mola=new&crop=v1",
+          "https://ss3.baidu.com/-rVXeDTa2gU2pMbgoY3K/it/u=1857931629,3664337888&fm=202&mola=new&crop=v1",
         ],
         setting: {
           //轮播图高度，默认 auto，单位px

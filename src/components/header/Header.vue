@@ -28,9 +28,14 @@
         <!--导航栏右-->
         <div class="nav-right">
           <ul>
-            <li @click="intoLogin">
+            <!---->
+            <li v-if="!isLogin" @click="intoLogin">
               <span class="bg-pic login"></span>
               <span>登录</span>
+            </li>
+            <li v-else="isLogin" @click="intoUserCenter">
+              <span class="bg-pic login"></span>
+              <span>个人中心</span>
             </li>
             <li @click="intoNews">
               <span class="bg-pic news"></span>
@@ -52,7 +57,10 @@
     name: "",
     components: {},
     data() {
-      return {}
+      return {
+        //是否登录，默认false
+        isLogin:false
+      }
     },
     methods: {
       intoHome: function () {
@@ -70,12 +78,19 @@
       intoLogin: function () {
         this.$router.push("login")
       },
+      intoUserCenter:function(){
+        this.$router.push("userCenter")
+      },
       intoNews: function () {
         this.$router.push("news")
       },
       intoAboutUs: function () {
         this.$router.push("aboutUs")
       }
+    },
+    mounted(){
+      //查看用户是否登录
+      this.isLogin = window.sessionStorage.getItem("isLogin");
     }
   }
 </script>
