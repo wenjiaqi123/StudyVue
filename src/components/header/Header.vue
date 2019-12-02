@@ -53,13 +53,17 @@
 </template>
 
 <script>
+  import {
+    getCookie
+  } from "../../tools/cookie";
+
   export default {
     name: "",
     components: {},
     data() {
       return {
         //是否登录，默认false
-        isLogin:false
+        isLogin: false
       }
     },
     methods: {
@@ -78,7 +82,7 @@
       intoLogin: function () {
         this.$router.push("login")
       },
-      intoUserCenter:function(){
+      intoUserCenter: function () {
         this.$router.push("userCenter")
       },
       intoNews: function () {
@@ -88,9 +92,13 @@
         this.$router.push("aboutUs")
       }
     },
-    mounted(){
-      //查看用户是否登录
-      this.isLogin = window.sessionStorage.getItem("isLogin");
+    mounted() {
+      //是否登录
+      let isLogin = window.sessionStorage.getItem("isLogin");
+      let isLoginCookie = getCookie("isLogin");
+      if (isLoginCookie || isLogin) {
+        this.isLogin = true;
+      }
     }
   }
 </script>
