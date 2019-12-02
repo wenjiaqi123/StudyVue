@@ -20,6 +20,15 @@
     components: {
       Header,
       Footer
+    },
+    mounted() {
+      this.axios.interceptors.request.use((config) => {
+        if (config.method === "post") {
+          config.data = this.qs.stringify(config.data);
+        }
+        return config;
+        return config;
+      })
     }
   }
 </script>
@@ -34,7 +43,8 @@
     font-size: 16px; /*文字大小*/
     text-align: center; /*文字居中*/
   }
-  .realBody{
+
+  .realBody {
     height: 800px;
     width: 1190px;
     margin: 0 auto;

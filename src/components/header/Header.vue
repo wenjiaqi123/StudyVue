@@ -53,6 +53,7 @@
 </template>
 
 <script>
+  import Bus from "@/tools/bus"
   import {
     getCookie
   } from "../../tools/cookie";
@@ -93,12 +94,17 @@
       }
     },
     mounted() {
-      //是否登录
+      // sessionStorage 是否登录
       let isLogin = window.sessionStorage.getItem("isLogin");
+      // cookie 是否登录
       let isLoginCookie = getCookie("isLogin");
       if (isLoginCookie || isLogin) {
         this.isLogin = true;
       }
+      //监听【Login】组件,如果登录，修改isLogin值，刷新组件
+      Bus.$on("myEvent-isLogin",(data)=>{
+        this.isLogin = data;
+      });
     }
   }
 </script>

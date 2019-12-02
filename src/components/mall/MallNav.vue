@@ -7,15 +7,15 @@
       </li>
       <li>
         <span>bb</span>
-        <span>外设</span>
+        <span @click="into">外设</span>
       </li>
       <li>
         <span>cc</span>
-        <span>软件</span>
+        <span @click="into">软件</span>
       </li>
       <li>
         <span>dd</span>
-        <span>康复指南</span>
+        <span @click="into">康复指南</span>
       </li>
     </ul>
   </div>
@@ -32,6 +32,10 @@
     },
     methods: {
       intoBook: function () {
+        this.$router.push("/userCenter")
+      },
+      into:function () {
+        this.$router.push("/userCenter")
       }
     }
   }

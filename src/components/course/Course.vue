@@ -1,18 +1,17 @@
 <template>
-    <div class="course">
-        
-    </div>
+  <div class="course">
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "",
-        components: {},
-        data() {
-            return {}
-        },
-        methods: {}
-    }
+  export default {
+    name: "",
+    components: {},
+    data() {
+      return {}
+    },
+    methods: {}
+  }
 </script>
 
 <style scoped>
